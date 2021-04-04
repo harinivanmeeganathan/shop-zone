@@ -24,19 +24,14 @@ const CheckoutPage = ({cartItems,total}) => (
                 <div className = 'header-block'>
                     <span>Remove</span>
                 </div>
-
-                {
-                    cartItems.map(cartItem => 
-                     (
-                          <CheckoutItem cartIem = {cartItem}/>
-                     ))
-                }
-               
-                <div className = 'total'>
-                  <span>TOTAL: ${total}</span>
                 </div>
-            </div>
-        </div>
+        {
+        cartItems.map(cartItem => (
+                 <CheckoutItem key={cartItem.id} cartItem={cartItem} />
+    ))}
+    <div className='total'>TOTAL: ${total}</div>
+       </div>
+       
 );
 
 const mapStateToProps = createStructuredSelector(
