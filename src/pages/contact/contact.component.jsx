@@ -1,11 +1,11 @@
 import React from 'react';
-import './contact.styles.scss';
+import {ContactContainer,LabelOne,LabelTwo} from './contact.styles';
 const Contact = () => (
     
-    <div className = 'contact'>
-       <label className = 'label1'> WELCOME TO SHOP-ZONE :)</label>
-       <label className = 'label2'>Thanks for Visiting! </label>
-     </div>
+    <ContactContainer>
+       <LabelOne> WELCOME TO SHOP-ZONE :)</LabelOne>
+       <LabelTwo>Thanks for Visiting! </LabelTwo>
+     </ContactContainer>
 );
 
 export default Contact;
